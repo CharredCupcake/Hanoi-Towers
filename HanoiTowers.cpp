@@ -9,7 +9,7 @@ void HanoiTowers::printMoves()
 {
 	size_t i = 0;
 	solve(m_discCount, CtoI::A, CtoI::C, CtoI::B);
-	reverceMoves();
+	reverseMoves();
 	while (!m_moves.empty())
 	{
 		i++;
@@ -63,7 +63,7 @@ Pole& HanoiTowers::getPole(CtoI id)
 	if (m_poleC.m_id == id)return m_poleC;
 }
 
-void HanoiTowers::reverceMoves()
+void HanoiTowers::reverseMoves()
 {
 	std::stack<Move> newMoves;
 	while (!m_moves.empty())

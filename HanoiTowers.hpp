@@ -38,6 +38,6 @@ private:
 	void move(Pole& sending, Pole& receiving);
 	void solve(size_t n, CtoI from, CtoI to, CtoI hanging);
 	Pole& getPole(CtoI id);
-	void reverceMoves();
+	void reverseMoves();
 };
 
